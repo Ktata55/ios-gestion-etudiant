@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pu2-BS-5Bb">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" colorLabel="IBBuiltInLabel-Green">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIw-Mu-bcD">
+                                <rect key="frame" x="171" y="149" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6A0-u5-ztc">
+                                <rect key="frame" x="119" y="212" width="154" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfh-wp-mgb">
+                                <rect key="frame" x="33" y="178" width="327" height="35"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggd-BN-v8l">
+                                <rect key="frame" x="95" y="290" width="194" height="92"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Vérifier Captcha">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="verifClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IBM-QT-G9E"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="welcome.png" translatesAutoresizingMaskIntoConstraints="NO" id="wUk-1O-N7B">
+                                <rect key="frame" x="79" y="405" width="257" height="65"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="our_vision.png" translatesAutoresizingMaskIntoConstraints="NO" id="AqD-EI-Cf9">
+                                <rect key="frame" x="53" y="487" width="309" height="97"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unlock-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q0i-PU-kwW">
+                                <rect key="frame" x="265" y="312" width="50" height="38"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_kilit.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Mg-rB-dZg">
+                                <rect key="frame" x="230" y="209" width="43" height="35"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bYu-ut-86k"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="code" destination="yIw-Mu-bcD" id="QTG-fQ-q51"/>
+                        <outlet property="codeverification" destination="6A0-u5-ztc" id="Njf-w1-HKC"/>
+                        <outlet property="message" destination="xfh-wp-mgb" id="jeX-qm-23z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1165" y="365"/>
+        </scene>
+        <!--Ajouter-->
+        <scene sceneID="GIg-Eg-SLl">
+            <objects>
+                <viewController storyboardIdentifier="ListeMatiereViewController" id="sXn-pL-bRU" customClass="ListeMatiereViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Jy-uo-Eb7"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZdG-OV-z6d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ntz-lI-f2P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NoS-bp-UYM">
+                                <rect key="frame" x="0.0" y="53" width="378" height="513"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="sXn-pL-bRU" id="6Tl-hj-yzO"/>
+                                    <outlet property="delegate" destination="sXn-pL-bRU" id="egU-By-His"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtJ-QP-bxg">
+                                <rect key="frame" x="-5" y="579" width="414" height="89"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Voir Moyenne" backgroundImage="1366174936.png">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mouveToMoyenne:" destination="sXn-pL-bRU" eventType="touchUpInside" id="WbN-Ee-RUw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ajouter" id="PvJ-2C-pht">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="Qij-Os-tJU">
+                            <connections>
+                                <action selector="toajoutmatier:" destination="sXn-pL-bRU" id="x1M-au-roh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="matTableView" destination="NoS-bp-UYM" id="ubG-mP-LNc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J05-Za-09o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750" y="365"/>
+        </scene>
+        <!--Moyenne View Controller-->
+        <scene sceneID="rcU-Vm-xyV">
+            <objects>
+                <viewController storyboardIdentifier="MoyenneViewController" id="moT-CF-rYx" customClass="MoyenneViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lM5-3G-MWI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zib-CB-WpA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wn4-Bf-NjO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSC-vB-1DP">
+                                <rect key="frame" x="16" y="146" width="382" height="126"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Federal-Board-5th-Class-Result-2015-Islamabad-Check-Online.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="69G-0U-TnY">
+                                <rect key="frame" x="190" y="148" width="208" height="247"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="school-research-dictionary-books-3-classroom-clipart-FZdnpR-clipart.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lVh-JZ-zYg">
+                                <rect key="frame" x="0.0" y="403" width="391" height="305"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Votre moyenne général est égale a :" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtG-1A-aeH">
+                                <rect key="frame" x="35" y="28" width="345" height="143"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="gSC-vB-1DP" id="Qkj-j8-rfw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tga-cq-GjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750" y="1228"/>
+        </scene>
+        <!--Ajout Matiere View Controller-->
+        <scene sceneID="MVY-Yx-0bn">
+            <objects>
+                <viewController storyboardIdentifier="AjoutMatiereViewController" id="DAN-ap-c6U" customClass="AjoutMatiereViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tbz-3j-3zE"/>
+                        <viewControllerLayoutGuide type="bottom" id="8dD-GT-58u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="701-yf-0j7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Note" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ILW-Ml-Lq8">
+                                <rect key="frame" x="96" y="198" width="222" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coefficient" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="svj-S6-jpL">
+                                <rect key="frame" x="96" y="288" width="222" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teg-q1-OJd">
+                                <rect key="frame" x="162" y="391" width="91" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Ajouter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addMatiere:" destination="DAN-ap-c6U" eventType="touchUpInside" id="nCc-p1-6Sv"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nom Matiere" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VrN-Ae-S36">
+                                <rect key="frame" x="96" y="107" width="222" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add1_256.png" translatesAutoresizingMaskIntoConstraints="NO" id="Srv-sm-99b">
+                                <rect key="frame" x="238" y="385" width="66" height="42"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <keyCommands/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="coeff" destination="svj-S6-jpL" id="4Ao-FW-Ls5"/>
+                        <outlet property="matieres" destination="VrN-Ae-S36" id="bcr-Oy-0yW"/>
+                        <outlet property="note" destination="ILW-Ml-Lq8" id="MMd-8B-CbG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ooz-eg-YXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2325" y="365"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5qJ-sn-OxS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pu2-BS-5Bb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ym0-aA-SgS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="guF-et-NUj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KzW-q2-pqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="353" y="365"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1366174936.png" width="2269" height="2382"/>
+        <image name="Federal-Board-5th-Class-Result-2015-Islamabad-Check-Online.jpg" width="480" height="360"/>
+        <image name="add1_256.png" width="256" height="256"/>
+        <image name="icon_kilit.png" width="248" height="361"/>
+        <image name="our_vision.png" width="320" height="320"/>
+        <image name="school-research-dictionary-books-3-classroom-clipart-FZdnpR-clipart.jpg" width="550" height="399"/>
+        <image name="unlock-2.png" width="256" height="256"/>
+        <image name="welcome.png" width="1556" height="481"/>
+    </resources>
+</document>
